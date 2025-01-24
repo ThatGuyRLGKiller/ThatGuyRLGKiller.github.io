@@ -24,6 +24,25 @@ header p {
     font-size: 1.2rem;
 }
 
+header .button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #333; /* Matches header background */
+    color: #fff; /* Matches header text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid #fff; /* White border for contrast */
+    transition: all 0.3s ease;
+}
+
+header .button:hover {
+    background: #555; /* Lighter background on hover */
+    color: #f4f4f9; /* Subtle text color change */
+}
+
 main {
     padding: 2rem;
     max-width: 800px;
