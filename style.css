@@ -44,6 +44,20 @@ ul {
     margin-left: 2rem;
 }
 
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #555;
+}
+
 footer {
     background: #333;
     color: #fff;
