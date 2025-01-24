@@ -1,52 +1,60 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Noto Serif JP', serif; /* Japanese-style serif font for elegance */
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f7f3e9; /* Soft beige for a parchment-like background */
     color: #333;
 }
 
 header {
-    background: #333;
+    background: #d4a373; /* Warm golden-brown resembling Japanese wood tones */
     color: #fff;
     text-align: center;
     padding: 2rem 1rem;
+    border-bottom: 5px solid #8b5e34; /* Darker brown border to add depth */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 header p {
     margin: 0.5rem 0 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-style: italic;
 }
 
 header .button {
     display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background: #333; /* Matches header background */
-    color: #fff; /* Matches header text */
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    background: #8b5e34; /* Earthy brown tone */
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     font-size: 1rem;
-    border: 2px solid #fff; /* White border for contrast */
+    border: 2px solid #fff;
     transition: all 0.3s ease;
 }
 
 header .button:hover {
-    background: #555; /* Lighter background on hover */
-    color: #f4f4f9; /* Subtle text color change */
+    background: #a67f5b; /* Slightly lighter hover tone */
+    color: #f7f3e9; /* Matches the background for harmony */
 }
 
 main {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
+    background: #ffffff; /* Clean white background for contrast */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid #8b5e34; /* Subtle border resembling traditional Japanese scrolls */
 }
 
 section {
@@ -54,33 +62,79 @@ section {
 }
 
 h2 {
-    color: #444;
+    color: #8b5e34; /* Accent color matching the header */
     margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #d4a373; /* Line resembling calligraphy strokes */
+    padding-bottom: 0.3rem;
 }
 
 ul {
-    list-style-type: disc;
-    margin-left: 2rem;
+    list-style-type: none; /* No default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background: #f7f3e9;
+    border: 1px solid #d4a373;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    color: #333;
 }
 
 .button {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background: #333;
+    padding: 0.5rem 1.5rem;
+    background: #8b5e34;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
 .button:hover {
-    background: #555;
+    background: #d4a373;
+    color: #fff;
 }
 
 footer {
-    background: #333;
+    background: #d4a373;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+    border-top: 5px solid #8b5e34;
+}
+
+/* Add subtle Japanese texture via background patterns */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+    opacity: 0.2; /* Light opacity for texture */
+}
+
+/* Add a modern touch for mobile responsiveness */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    main {
+        padding: 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
 }
