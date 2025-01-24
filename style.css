@@ -1,63 +1,58 @@
 body {
-    font-family: 'Noto Serif JP', serif; /* Japanese-style serif font */
-    line-height: 1.8;
+    font-family: 'Noto Serif JP', Arial, sans-serif; /* Use Japanese font */
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fff7f7; /* Light cherry blossom pink background */
+    background-color: #f4f4f9; /* Soft background */
     color: #333;
+    background-image: url('https://example.com/path-to-cherry-blossom-image.jpg'); /* Replace with actual cherry blossom image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
-    background: #d83939; /* Warm red inspired by cherry blossoms */
+    background: rgba(51, 51, 51, 0.8); /* Slightly transparent */
     color: #fff;
     text-align: center;
     padding: 2rem 1rem;
     position: relative;
-    border-bottom: 5px solid #a32626; /* Darker red for depth */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.8rem;
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-size: 2.5rem;
 }
 
 header p {
     margin: 0.5rem 0 0;
-    font-size: 1.4rem;
-    font-style: italic;
+    font-size: 1.2rem;
 }
 
 header .button {
     display: inline-block;
-    margin-top: 1.5rem;
-    padding: 0.5rem 1.5rem;
-    background: #a32626; /* Deep red for buttons */
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #e91e63; /* Cherry blossom pink */
     color: #fff;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: bold;
     font-size: 1rem;
-    border: 2px solid #fff;
+    border: 2px solid #fff; /* White border for contrast */
     transition: all 0.3s ease;
 }
 
 header .button:hover {
-    background: #c94545; /* Softer red for hover */
-    color: #fff7f7; /* Matches the body background */
+    background: #d81b60; /* Darker pink on hover */
+    color: #f4f4f9; /* Subtle text color change */
 }
 
 main {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
-    background: #ffffff; /* White content background for contrast */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    border: 2px solid #d83939; /* Cherry blossom red border */
-    background-image: url('https://www.transparenttextures.com/patterns/grey-floral.png'); /* Subtle floral pattern */
-    background-size: 300px;
+    background: rgba(255, 255, 255, 0.9); /* White background for content */
+    border-radius: 10px; /* Rounded corners */
 }
 
 section {
@@ -65,94 +60,33 @@ section {
 }
 
 h2 {
-    color: #d83939; /* Cherry blossom red for headings */
+    color: #444;
     margin-bottom: 0.5rem;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #f4bfbf; /* Light pink underline */
-    padding-bottom: 0.3rem;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul li {
-    background: #fff7f7; /* Light cherry blossom pink */
-    border: 1px solid #f4bfbf; /* Subtle pink border */
-    margin: 0.5rem 0;
-    padding: 0.8rem;
-    border-radius: 5px;
-    color: #333;
+    list-style-type: disc;
+    margin-left: 2rem;
 }
 
 .button {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.5rem 1.5rem;
-    background: #a32626;
+    padding: 0.5rem 1rem;
+    background: #e91e63; /* Cherry blossom pink */
     color: #fff;
     text-decoration: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    border-radius: 5px;
 }
 
 .button:hover {
-    background: #d83939;
-    color: #fff;
+    background: #d81b60; /* Darker pink on hover */
 }
 
 footer {
-    background: #d83939;
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
-    border-top: 5px solid #a32626;
-}
-
-/* Cherry blossom branch at the top */
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://i.imgur.com/HTdNtzT.png'); /* Cherry blossom branch image */
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.2; /* Subtle overlay effect */
-    z-index: -1;
-}
-
-/* Add a cherry blossom texture to the body */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Subtle cube pattern */
-    opacity: 0.1;
-    z-index: -1;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    header p {
-        font-size: 1rem;
-    }
-    main {
-        padding: 1rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
 }
